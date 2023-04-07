@@ -7,20 +7,31 @@
     <meta name="keywords" content="Прокопий, Алексеев, резюме, CV">
     <meta name="description" content="Это сайт-резюме Прокопия Алексеева">
     <title>Прокопий Алексеев - резюме</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>    
+        <img src="ava.jpg" width="250" alt="Здесь должна была быть моя фотография, но почему-то она не прогрузилась">
+        
+        <h1 class="h">Прокопий Алексеев</h1>
+    </header>
+    <div id="obshaya">   
+        <p>Я бывший <em>заместитель начальника клиентской службы</em> центра <strong>"Мои Документы"</strong> Якутии.</p>
+        
+        <p>В настоящее время нахожусь в <strong>г. Улан-Батор, Монголия.</strong></p>
+        
+        <h2 class="h"><strong>Меня можно найти по ссылкам:</strong></h2>
+        
+        <a href="https://www.instagram.com/alexeev_p/" target="_blank">Instagram</a> | <a href="https://t.me/pron_ykt" target="_blank">Telegram</a>
+    </div>
 
-    <h1>Прокопий Алексеев</h1>
-    <img src="ava.jpg" width="250" alt="Здесь должна была быть моя фотография, но почему-то она не прогрузилась">
-    <p>Я бывший <em>заместитель начальника клиентской службы</em> центра <strong>"Мои Документы"</strong> Якутии.</p>
-    <p><em>В настоящее время нахожусь в г. Улан-Батор, Монголия.</em></p>
 
 
-    <h2><strong>Мои хобби:</strong></h2>
-    <ol>
+    <h2 class="h"><strong>Мои хобби:</strong></h2>
+    <ol class="list">
         <li>Бег</li>
         <li>Компьютерные игры</li>
-        <li>Анимэ</li>
+        <li>Аниме</li>
         <li>Сериалы</li>
         <li>Футбол</li>
         <li>Программирование</li>
@@ -28,8 +39,8 @@
     </ol>
 
 
-    <h2><strong>Опыт работы:</strong></h2>
-    <table border="1">
+    <h2 class="h"><strong>Опыт работы:</strong></h2>
+    <table id="work">
         <thead>
             <tr>
                 <th><strong>Место работы</strong></th>
@@ -57,29 +68,29 @@
     </table>
 
 
-    <h2><strong>Меня можно найти по ссылкам:</strong></h2>
-    <a href="https://www.instagram.com/alexeev_p/" target="_blank">Instagram (Запрещенная на территории РФ)</a> | <a href="https://t.me/pron_ykt" target="_blank">Telegram</a>
+    
 
+    <footer>
+        <h2 class="h">Связаться со мной:</h2>
+        <form action="/">
 
-    <h2>Связаться со мной:</h2>
-    <form action="/">
+            <div>
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" placeholder="Введите имя">
+            </div>
 
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
-        </div>
+            <div>
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" placeholder="Введите email">
+            </div>
 
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
-        </div>
-
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="30" rows="5" placeholder="Ваше сообщение..."></textarea>
-        </div>
-        <input type="submit" value="Отправить!">
-    </form>
+            <div>
+                <label for="message">Ваше сообщение:</label>
+                <br>
+                <textarea id="message" cols="30" rows="5" placeholder="Ваше сообщение..."></textarea>
+            </div>
+            <input type="submit" value="Отправить!">
+        </form>
+    </footer>
 </body>
 </html>
