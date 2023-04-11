@@ -3,26 +3,113 @@ body {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
+    color: #0f141e;
+}
+.container {
+    max-width: 1080px;
+    margin: auto;
+}
+.h {
+    font-style: italic;
+    margin-block: 0px;
+    color:black;
 }
 header {
     background: #E5FEC5;
-    padding: 20px;
+    font-style:italic;
+    letter-spacing: 2px;
+    color: #86898f;
+    display: flex;
+}
+.header-text {
+    margin-left: 20px;
 }
 .list {
     text-decoration: underline;
     line-height: 30px;
 }
-.h {
-    font-style: italic;
+.table {
+    width: 100%;
+    padding: 0;
 }
-#obshaya {
-    font-style:italic;
-    letter-spacing: 2px;
+.table td, th {
+    text-align: center;
 }
-/* #work {
-    line-height: 50px;
-} */
-
 footer {
-    background: #DEDBFB;
+    background: #dedbfb; 
+}
+.card {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    padding: 15px 25px;
+}
+.ava {
+    border-radius: 30px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.5);
+    width: 200px;
+}
+a {
+    font-family: inherit;
+    text-decoration: none;
+    transition: all.2s;
+    color: #8c00ff;
+}
+a:hover {
+    font-size: 1.1rem;
+}
+a:visited{
+    color: #86898f;
+1}
+a:active {
+    color: green;
+}
+.btn {
+    cursor:pointer;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.5);
+}
+.form h2 {
+    text-align: center;
+}
+.form-name-email {  
+    margin: 10px 0;
+    display: flex;
+}
+.form-box {
+    /* display: inline-block; */
+    margin-right: 20px;
+    width: 50%;
+    /* width: calc(50% - 20px); */
+}
+.form-box:last-child {
+    margin-right: 0;
+}
+#name, #email, #message {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+
+}
+label {
+    display: block;
+}
+@media (max-width: 650px) {
+    header {
+        display:block;
+        text-align: center;
+    }
+    .form-name-email {  
+        margin: 10px 0;
+        display: block;
+    }
+    .form-box {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 100 px;
+    }
 }

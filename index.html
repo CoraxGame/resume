@@ -10,87 +10,85 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>    
-        <img src="ava.jpg" width="250" alt="Здесь должна была быть моя фотография, но почему-то она не прогрузилась">
+    <div class="container">
+        <header class="card">    
+            <img src="ava.jpg" class="ava" alt="Здесь должна была быть моя фотография, но почему-то она не прогрузилась">
+            <div class="header-text">
+            <h1 class="h">Прокопий Алексеев</h1>
         
-        <h1 class="h">Прокопий Алексеев</h1>
-    </header>
-    <div id="obshaya">   
-        <p>Я бывший <em>заместитель начальника клиентской службы</em> центра <strong>"Мои Документы"</strong> Якутии.</p>
-        
-        <p>В настоящее время нахожусь в <strong>г. Улан-Батор, Монголия.</strong></p>
-        
-        <h2 class="h"><strong>Меня можно найти по ссылкам:</strong></h2>
-        
-        <a href="https://www.instagram.com/alexeev_p/" target="_blank">Instagram</a> | <a href="https://t.me/pron_ykt" target="_blank">Telegram</a>
-    </div>
-
-
-
-    <h2 class="h"><strong>Мои хобби:</strong></h2>
-    <ol class="list">
-        <li>Бег</li>
-        <li>Компьютерные игры</li>
-        <li>Аниме</li>
-        <li>Сериалы</li>
-        <li>Футбол</li>
-        <li>Программирование</li>
-        <li>Дизайн</li>
-    </ol>
-
-
-    <h2 class="h"><strong>Опыт работы:</strong></h2>
-    <table id="work">
-        <thead>
-            <tr>
-                <th><strong>Место работы</strong></th>
-                <th><strong>Должность</strong></th>
-                <th><strong>Период работы</strong></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Сбербанк</td>
-                <td>Старший специалист ЦОПП</td>
-                <td>05.2013-08.2014</td>
-            </tr>
-            <tr>
-                <td>Россельхозбанк</td>
-                <td>Старший специалист по обслуживанию юр. лиц</td>
-                <td>01.2016-05.2016</td>
-            </tr>
-            <tr>
-                <td>Мои Документы</td>
-                <td>Специалист - Главный специалист - Заместитель начальника</td>
-                <td>06.2016-11.2022</td>
-            </tr>
-        </tbody>
-    </table>
-
-
-    
-
-    <footer>
-        <h2 class="h">Связаться со мной:</h2>
-        <form action="/">
-
-            <div>
-                <label for="name">Ваше имя:</label>
-                <input type="text" id="name" placeholder="Введите имя">
+            <p>Я бывший <em>заместитель начальника клиентской службы</em> центра <strong>"Мои Документы"</strong> Якутии.</p>
+            <p>В настоящее время нахожусь в <strong>г. Улан-Батор, Монголия.</strong></p>
+            <br>
+            <h2 class="h"><strong>Меня можно найти по ссылкам:</strong></h2>
+            <a href="https://www.instagram.com/alexeev_p/" target="_blank">Instagram</a> | <a href="https://t.me/pron_ykt" target="_blank">Telegram</a>
             </div>
+        </header>
+        <div class="card">
+            <h2 class="h"><strong>Мои хобби:</strong></h2>
 
-            <div>
-                <label for="email">Ваш email:</label>
-                <input type="email" id="email" placeholder="Введите email">
-            </div>
+            <ol class="list">
+                <li>Бег</li>
+                <li>Компьютерные игры</li>
+                <li>Аниме</li>
+                <li>Сериалы</li>
+                <li>Футбол</li>
+                <li>Программирование</li>
+                <li>Дизайн</li>
+            </ol>
+        </div>
+        
+        <div class="card">
+            <h2 class="h"><strong>Опыт работы:</strong></h2>
 
-            <div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th><strong>Место работы</strong></th>
+                        <th><strong>Должность</strong></th>
+                        <th><strong>Период работы</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Сбербанк</td>
+                        <td>Старший специалист ЦОПП</td>
+                        <td>05.2013-08.2014</td>
+                    </tr>
+                    <tr>
+                        <td>Россельхозбанк</td>
+                        <td>Старший специалист по обслуживанию юр. лиц</td>
+                        <td>01.2016-05.2016</td>
+                    </tr>
+                    <tr>
+                        <td>Мои Документы</td>
+                        <td>Специалист - Главный специалист - Заместитель начальника</td>
+                        <td>06.2016-11.2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        
+        <footer class="card">            
+            <form action="/" class="form">
+                <h2 class="h">Связаться со мной:</h2>
+                <div class="form-name-email">
+                    <div class="form-box">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>       
+                    <div class="form-box">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+                <div>
                 <label for="message">Ваше сообщение:</label>
-                <br>
                 <textarea id="message" cols="30" rows="5" placeholder="Ваше сообщение..."></textarea>
-            </div>
-            <input type="submit" value="Отправить!">
-        </form>
-    </footer>
+                </div>
+            <input type="submit" value="Отправить!" class="btn">
+            </form>
+        </footer>
+    </div>
 </body>
 </html>
